@@ -1,0 +1,5 @@
+---
+- name: Install mlocate
+  yum:
+    name: mlocate
+    state: present
