@@ -14,4 +14,7 @@
    src: /tmp/ansible/jboss-as-7.1.1.Final.tar.gz
    dest: /tmp/ansible
    remote_src: yes
-  
+   
+- name: move to directory & execute install script
+  command:
+    chdir: /tmp/ansible/jboss-as-7.1.1.Final/bin/ ./standalone.sh
