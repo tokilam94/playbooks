@@ -1,4 +1,15 @@
 ---
+- name: install jdk
+  yum:
+   name: java-1.6.0-openjdk-devel
+   state: present
+   
+- name: add port 9990 to firewall exception
+  firewalld:
+   port: 9990/tcp
+   permanent: yes
+   state: enabled
+   
 - name: create jboss directory
   file:
    state: directory
@@ -17,4 +28,6 @@
    
 - name: move to directory & execute install script
   command:
-    chdir: /tmp/ansible/jboss-as-7.1.1.Final/bin/ ./standalone.sh
+    chdir: /tmp/ansible/jboss-as-7.1.1.Final/bin/ 
+    sh ./standalone.sh
+    
