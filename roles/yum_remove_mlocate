@@ -1,5 +1,0 @@
----
-- name: remove mlocate
-  yum:
-    name: mlocate
-    state: absent
