@@ -1,6 +1,0 @@
----
-- name: execute standalone.sh script
-  shell: ./standalone.sh&
-  args:
-   chdir: /tmp/ansible/jboss-as-7.1.1.Final/bin/
-  
