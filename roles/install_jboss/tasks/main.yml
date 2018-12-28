@@ -25,7 +25,4 @@
    src: /tmp/ansible/jboss-as-7.1.1.Final.tar.gz
    dest: /tmp/ansible
    remote_src: yes
-   
-- name: execute standalone.sh script
-  script: /tmp/ansible/jboss-as-7.1.1.Final/bin/standalone.sh
     
