@@ -1,0 +1,3 @@
+---
+- name: execute standalone.sh script
+  script: /tmp/ansible/jboss-as-7.1.1.Final/bin/standalone.sh
